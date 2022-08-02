@@ -18,8 +18,10 @@ public class ThreadOne implements Runnable {
             }
         } catch (InterruptedException e) {
             System.out.println("Thread " + name + "Interrupted");
+
         }
         System.out.println("Thread " + name + " exiting.");
+
     }
 }
 
@@ -29,6 +31,7 @@ class MultiThread {
         Experiment("One", 10000);
         Experiment("Two", 5000);
         Experiment("Three", 500);
+
     }
 
     private static void Experiment(String name, Integer limit) {
@@ -42,5 +45,6 @@ class MultiThread {
             System.out.println("Main thread Interrupted");
         }
         System.out.println("Main thread exiting.");
+
     }
 }
